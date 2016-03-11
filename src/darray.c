@@ -48,12 +48,12 @@ Array *createArray()
 void push(Array *arr, int item)
 {
     int *t = NULL;
-    assert(arr);
+    assert(arr != NULL);
     t = realloc( arr->items , sizeof *arr->items * arr->count + sizeof item);
     if( t != NULL )
     {
         t[ arr->count ] = item;
-        arr->items = t;
+        arr->items = t -> count;
         arr->count++;       
     }
     else

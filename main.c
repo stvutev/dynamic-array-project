@@ -55,10 +55,8 @@ int main(int argc, char** argv) {
                           {
                             fprintf(stdout, "item:%d shifted!\n",t);
                           }
-                        else
-                          {
-                            fprintf(stdout, "The array is empty\n");
-                          }
+                        else                         
+                            fprintf(stdout, "The array is empty\n");                      
                         break;
             case STRINS: straightInsertion(arr);
                          break;
